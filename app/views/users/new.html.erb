@@ -1,26 +1,3 @@
-<h1 class="text-center">Signup for Alpha Blog</h1>
+<h1 class="text-center">Sign up for Alpha Blog</h1>
 
-<%= render 'shared/errors', obj: @user %>
-
-<div class="row">
-	<div class="col-xs-12">
-		<%= form_for @user do |f| %>
-			<div class="form-group">
-				<%= f.label :username %><br>
-				<%= f.text_field :username, placeholder: "Enter username", class: "form-control", autofocus: true %>
-			</div>
-			<div class="form-group">
-				<%= f.label :email %><br>
-				<%= f.email_field :email, placeholder: "Enter email", class: "form-control" %>
-			</div>
-			<div class="form-group">
-				<%= f.label :password %><br>
-				<%= f.password_field :password, placeholder: "Enter password", class: "form-control" %>
-			</div>
-
-			<div class="form-group">
-				<%= f.submit "Sign Up", class: "btn btn-primary" %>
-			</div>
-		<% end %>
-	</div>
-</div>
+<%= render 'form' %>
