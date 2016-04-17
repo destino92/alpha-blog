@@ -1,0 +1,13 @@
+<h1 class="text-center">Create new category</h1>
+
+<%= render 'shared/errors', obj: @category %>
+
+<%= form_for @category do |f| %>
+	<div class="form-group">
+		<%= f.label :name %><br>
+		<%= f.text_field :name, placeholder: "Category", class: "form-control", autofocus: true %>
+	</div>
+	<div class="form-group">
+		<%= f.submit class: "btn btn-primary" %>
+	</div>
+<% end %>
